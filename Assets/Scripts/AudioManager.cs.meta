@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 385fba2842d887946bde39e669a4fb48
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - introMusic: {fileID: 8300000, guid: c7741aebc8e2ee84a951bf95e7b8ba1e, type: 3}
+  - normalStateMusic: {fileID: 8300000, guid: ae12c251b905e8f469805fd4b0481f80, type: 3}
+  - scaredStateMusic: {fileID: 8300000, guid: 05a0d6d9910ece24aa7b9c59ce44cc38, type: 3}
+  - deadStateMusic: {fileID: 8300000, guid: 682ebf8498cd8e24cae13e2394b6ab6d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
