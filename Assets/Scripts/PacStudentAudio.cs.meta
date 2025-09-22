@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 867c93fa24ab19a49ae3377eeae1bd87
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - moveSound: {fileID: 8300000, guid: b452e8237441e6e449a096aa967b3a5c, type: 3}
+  - pelletEatSound: {fileID: 8300000, guid: 870edd1005a43fa448b177cf9da34d56, type: 3}
+  - wallCollisionSound: {fileID: 8300000, guid: 22768682c12d43f41b11e7e6fe968ab8, type: 3}
+  - deathSound: {fileID: 8300000, guid: a8e01253a3798eb4f9450f93d067ba5d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

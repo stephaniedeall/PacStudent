@@ -5,8 +5,8 @@ public class LevelLoaderAuto : MonoBehaviour
     [Tooltip("Assign prefabs for indices 0..8. If you want index 0 to be empty, either assign an empty prefab or leave it null and the script will skip index 0.")]
     public GameObject[] tilePrefabs; 
 
-    [Tooltip("World units per tile. If your sprites use PPU = tile pixel size (eg 16 PPU for 16px art), set tileSize = 1.")]
-    public float tileSize = 1f;
+    [Tooltip("World units per tile. Set to 0.5 for half-sized map.")]
+    public float tileSize = 0.25f; 
 
     int[,] levelMap = {
         {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
@@ -57,6 +57,7 @@ public class LevelLoaderAuto : MonoBehaviour
             }
         }
     }
+
     void PlaceTile(int index, int gridX, int gridY)
     {
         Vector3 pos = new Vector3(gridX * tileSize, -gridY * tileSize, 0f);
@@ -107,7 +108,7 @@ public class LevelLoaderAuto : MonoBehaviour
 
         cam.transform.position = new Vector3(centerX, centerY, -10f);
 
-        float padding = 1f; 
+        float padding = 0.25f; 
         float sizeByHeight = worldHeight / 2f + padding;
         float sizeByWidth = (worldWidth / cam.aspect) / 2f + padding;
         cam.orthographicSize = Mathf.Max(sizeByHeight, sizeByWidth);
